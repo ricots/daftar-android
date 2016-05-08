@@ -3,17 +3,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="#f2f2f2"
 
     tools:context=".activity.MainActivity">
 
-    <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:scrollbars="none">
 
         <LinearLayout
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical">
 
@@ -54,20 +51,254 @@
                         android:textSize="14dp"
                         android:background="@drawable/rect"
                         android:drawableRight="@drawable/search"/>
-
-
                 </android.support.v7.widget.CardView>
 
             </FrameLayout>
 
-           <FrameLayout
-               android:id="@+id/menuContent"
-               android:layout_width="match_parent"
-               android:layout_height="match_parent">
-           </FrameLayout>
+            <ScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scrollbars="none">
+                   <GridLayout
+                       android:id="@+id/menuContent"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:columnCount="1"
+                       android:rowCount="9"
+                       android:orientation="vertical"
+                       android:layout_centerHorizontal="true"
+                       android:padding="4dp"
+                       android:useDefaultMargins="true"
+                       android:rowOrderPreserved="true">
+
+                       <android.support.v7.widget.CardView
+                           android:layout_width="match_parent"
+                           android:layout_height="match_parent"
+                           app:cardBackgroundColor="@color/colorMenu9"
+                           android:clickable="true"
+                           >
+
+                           <RelativeLayout
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content">
+                               <ImageView
+                                   android:id="@+id/student"
+                                   android:layout_width="match_parent"
+                                   android:layout_height="match_parent"
+                                   android:src="@drawable/menu_student"
+                                   android:padding="8dp"/>
+
+                               <TextView
+                                   android:layout_width="wrap_content"
+                                   android:layout_height="wrap_content"
+                                   android:layout_below="@+id/student"
+                                   android:layout_centerInParent="true"
+                                   android:text="Student"
+                                   android:textStyle="bold"
+                                   android:textSize="16sp"/>
+                           </RelativeLayout>
 
 
+                       </android.support.v7.widget.CardView>
+                       <android.support.v7.widget.CardView
+                           android:layout_width="match_parent"
+                           android:layout_height="match_parent"
+                           app:cardBackgroundColor="@color/colorMenu8"
+                           >
 
+                           <RelativeLayout
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content">
+                               <ImageView
+                                   android:id="@+id/university"
+                                   android:layout_width="match_parent"
+                                   android:layout_height="match_parent"
+                                   android:src="@drawable/menu_about"
+                                   android:padding="8dp"/>
+
+                               <TextView
+                                   android:layout_width="wrap_content"
+                                   android:layout_height="wrap_content"
+                                   android:layout_below="@+id/university"
+                                   android:layout_centerInParent="true"
+                                   android:text="University"
+                                   android:textStyle="bold"
+                                   android:textSize="16sp"/>
+                           </RelativeLayout>
+
+
+                       </android.support.v7.widget.CardView>
+                       <android.support.v7.widget.CardView
+                           android:id="@+id/menuAdminsions"
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           app:cardBackgroundColor="@color/colorMenu7"
+                           >
+
+                           <RelativeLayout
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content">
+                               <ImageView
+                                   android:id="@+id/admis"
+                                   android:layout_width="match_parent"
+                                   android:layout_height="match_parent"
+                                   android:src="@drawable/menu_admissions"
+                                   android:padding="8dp"/>
+
+                               <TextView
+                                   android:layout_width="wrap_content"
+                                   android:layout_height="wrap_content"
+                                   android:layout_below="@+id/admis"
+                                   android:layout_centerInParent="true"
+                                   android:text="Admisions"
+                                   android:textStyle="bold"
+                                   android:textSize="16sp"/>
+                           </RelativeLayout>
+
+
+                       </android.support.v7.widget.CardView>
+                       <android.support.v7.widget.CardView
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           app:cardBackgroundColor="@color/colorMenu6"
+                           >
+
+                           <RelativeLayout
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content">
+                               <ImageView
+                                   android:id="@+id/library"
+                                   android:layout_width="match_parent"
+                                   android:layout_height="match_parent"
+                                   android:src="@drawable/menu_library"
+                                   android:padding="8dp"/>
+
+                               <TextView
+                                   android:layout_width="wrap_content"
+                                   android:layout_height="wrap_content"
+                                   android:layout_below="@+id/library"
+                                   android:layout_centerInParent="true"
+                                   android:text="Library"
+                                   android:textStyle="bold"
+                                   android:textSize="16sp"/>
+                           </RelativeLayout>
+
+
+                       </android.support.v7.widget.CardView>
+                       <android.support.v7.widget.CardView
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           app:cardBackgroundColor="@color/colorMenu5"
+                           >
+
+                           <RelativeLayout
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content">
+                               <ImageView
+                                   android:id="@+id/maps"
+                                   android:layout_width="match_parent"
+                                   android:layout_height="match_parent"
+                                   android:src="@drawable/menu_map"
+                                   android:padding="8dp"/>
+
+                               <TextView
+                                   android:layout_width="wrap_content"
+                                   android:layout_height="wrap_content"
+                                   android:layout_below="@+id/maps"
+                                   android:layout_centerInParent="true"
+                                   android:text="Map"
+                                   android:textStyle="bold"
+                                   android:textSize="16sp"/>
+                           </RelativeLayout>
+
+
+                       </android.support.v7.widget.CardView>
+                       <android.support.v7.widget.CardView
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           app:cardBackgroundColor="@color/colorMenu4"
+                           >
+
+                           <RelativeLayout
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content">
+                               <ImageView
+                                   android:id="@+id/event"
+                                   android:layout_width="match_parent"
+                                   android:layout_height="match_parent"
+                                   android:src="@drawable/menu_event"
+                                   android:padding="8dp"/>
+
+                               <TextView
+                                   android:layout_width="wrap_content"
+                                   android:layout_height="wrap_content"
+                                   android:layout_below="@+id/event"
+                                   android:layout_centerInParent="true"
+                                   android:text="Events"
+                                   android:textStyle="bold"
+                                   android:textSize="16sp"/>
+                           </RelativeLayout>
+
+
+                       </android.support.v7.widget.CardView>
+                       <android.support.v7.widget.CardView
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           app:cardBackgroundColor="@color/colorMenu3"
+                           >
+
+                           <RelativeLayout
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content">
+                               <ImageView
+                                   android:id="@+id/course"
+                                   android:layout_width="match_parent"
+                                   android:layout_height="match_parent"
+                                   android:src="@drawable/menu_courses"
+                                   android:padding="8dp"/>
+
+                               <TextView
+                                   android:layout_width="wrap_content"
+                                   android:layout_height="wrap_content"
+                                   android:layout_below="@+id/course"
+                                   android:layout_centerInParent="true"
+                                   android:text="Courses"
+                                   android:textStyle="bold"
+                                   android:textSize="16sp"/>
+                           </RelativeLayout>
+
+
+                       </android.support.v7.widget.CardView>
+                       <android.support.v7.widget.CardView
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           app:cardBackgroundColor="@color/colorMenu2"
+                           >
+
+                           <RelativeLayout
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content">
+                               <ImageView
+                                   android:id="@+id/news"
+                                   android:layout_width="match_parent"
+                                   android:layout_height="match_parent"
+                                   android:src="@drawable/menu_news"
+                                   android:padding="8dp"/>
+
+                               <TextView
+                                   android:layout_width="wrap_content"
+                                   android:layout_height="wrap_content"
+                                   android:layout_below="@+id/news"
+                                   android:layout_centerInParent="true"
+                                   android:text="News"
+                                   android:textStyle="bold"
+                                   android:textSize="16sp"/>
+                           </RelativeLayout>
+
+
+                       </android.support.v7.widget.CardView>
+                    </GridLayout>
+
+            </ScrollView>
         </LinearLayout>
-    </ScrollView>
 </RelativeLayout>
