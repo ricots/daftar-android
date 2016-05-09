@@ -12,7 +12,16 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Daftar"
+        android:text="Registration"
         android:id="@+id/daftar"
-        android:layout_gravity="center_horizontal" />
+        android:layout_margin="16dp"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login Candidate"
+        android:id="@+id/login"
+        android:layout_margin="16dp"
+        />
+
 </LinearLayout>

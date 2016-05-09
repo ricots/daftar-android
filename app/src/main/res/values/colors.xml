@@ -2,6 +2,7 @@
 <resources>
     <color name="colorPrimary">#FF9800</color>
     <color name="colorPrimaryDark">#F57C00</color>
+    <color name="colorPrimaryDarker">#FF8F00</color>
     <color name="colorAccent">#FF5722</color>
 
     <color name="colorTex">#585858</color>
@@ -9,7 +10,8 @@
     <color name="colorblue">#4c71f5</color>
     <color name="colorSub">#b0afaf</color>
 
-
+    <color name="iron">#CCCCCC</color>
+    <color name="white">#FFFFFF</color>
 
     <color name="colorMenu1">#F57C00</color>
     <color name="colorMenu2">#388E3C</color>

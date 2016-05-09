@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_profil"
+            android:icon="@drawable/ic_person_black_24dp"
+            android:title="Profil Candidate" />
+        <item
+            android:id="@+id/nav_guide"
+            android:icon="@drawable/menu_library"
+            android:title="Registration Guide" />
+        <item
+            android:id="@+id/nav_status"
+            android:icon="@drawable/ic_insert_file"
+            android:title="Status Graduation" />
+
+    </group>
+</menu>

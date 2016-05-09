@@ -6,5 +6,40 @@
     <string name="title_activity_main2">Main2Activity</string>
     <string name="title_activity_tab_admisions">Admisions</string>
     <string name="action_settings">Settings</string>
+    <string name="action_logout">Logout</string>
     <string name="section_format">Hello World from section: %1$d</string>
+    <string name="title_activity_login_candidate">Sign in</string>
+    <string name="title_register_candidate">Registration Candidate</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password (optional)</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Login Candidate</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+    <!--String dialog finish registration-->
+    <string name="p1">Selanjutnya anda akan mendapatkan No. Kuetansi dan kata sandi untuk login, melalusi sms dari kami</string>
+    <string name="p2">Silahkan lakukan pembayaran sesuai dengan jenis formulir yang anda pilih, setelah melakukan pembayaran, kami akan aktivasi hak login anda untuk melakukan pengisian formulir online</string>
+    <string name="p3">ada baiknya konfirmasi pembayaran melalui SMS</string>
+    <string name="p4">Terima Kasih.</string>
+    <string name="title_activity_candidate">CandidateActivity</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+
+    <string name="jnspromt">Jenis Formulir</string>
+
+    <string-array name="jnsform">
+        <item>IPA</item>
+        <item>IPS</item>
+        <item>IPC</item>
+    </string-array>
+
 </resources>

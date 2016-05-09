@@ -9,6 +9,7 @@ import android.view.ViewGroup;
 import android.widget.Button;
 
 import id.jajaka.pendaftaranmahasiswa.R;
+import id.jajaka.pendaftaranmahasiswa.activity.LoginCandidate;
 import id.jajaka.pendaftaranmahasiswa.activity.RegisterActivity;
 
 /**
@@ -20,6 +21,7 @@ public class TabFragment5 extends Fragment {
      * fragment.
      */
     private Button btnDaftar;
+    private Button btnLogin;
     private static final String ARG_SECTION_NUMBER = "section_number";
 
     public TabFragment5() {
@@ -53,6 +55,17 @@ public class TabFragment5 extends Fragment {
                 startActivity(intent);
             }
         });
+
+        btnLogin = (Button) rootView.findViewById(R.id.login);
+
+        btnLogin.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view){
+                Intent intent = new Intent(getActivity(), LoginCandidate.class);
+                startActivity(intent);
+            }
+        });
+
         return rootView;
 
     }
