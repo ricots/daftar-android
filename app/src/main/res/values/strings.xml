@@ -33,6 +33,7 @@
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
 
+    <!-- Register Layout-->
 
     <string name="jnspromt">Jenis Formulir</string>
 
@@ -42,4 +43,9 @@
         <item>IPC</item>
     </string-array>
 
+    <!-- Login Layout-->
+    <string name="nokwitansi">No Kwitansi</string>
+    <string name="password">Password</string>
+    <string name="btnLogin">Login</string>
+    <string name="linkRegister">No account yet? Create one</string>
 </resources>
